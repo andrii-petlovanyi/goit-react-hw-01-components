@@ -21,7 +21,7 @@ export const Statistics = ({ title, stats }) => {
       boxShadow="custom"
       as="section"
     >
-      <StatisticTittle>{title}</StatisticTittle>
+      {title && <StatisticTittle>{title}</StatisticTittle>}
       <StatisticList>
         {stats.map(({ id, label, percentage }) => (
           <StatisticItem key={id}>
@@ -35,7 +35,7 @@ export const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
