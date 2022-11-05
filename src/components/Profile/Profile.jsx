@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Avatar,
+  UserAvatar,
   UserInfo,
   UserTitle,
-  Stats,
   StatsList,
+  StatsItem,
   StatsNumbers,
 } from './Profile.styled';
 import { Box } from '../Box';
@@ -23,32 +23,31 @@ export const Profile = ({
       display="flex"
       flexDirection="column"
       alignItems="center"
-      ml="auto"
-      mr="auto"
+      mx="auto"
       mt="45px"
       pt="25px"
       boxShadow="custom"
     >
       <Box display="flex" flexDirection="column" alignItems="center">
-        <Avatar src={avatar} alt={username} width="100" />
+        <UserAvatar src={avatar} alt={`Avatar ` + username} width="100" />
         <UserTitle>{username}</UserTitle>
         <UserInfo>@{tag}</UserInfo>
         <UserInfo>{location}</UserInfo>
       </Box>
-      <Stats>
-        <StatsList>
+      <StatsList>
+        <StatsItem>
           <UserInfo>Followers</UserInfo>
           <StatsNumbers>{followers}</StatsNumbers>
-        </StatsList>
-        <StatsList>
+        </StatsItem>
+        <StatsItem>
           <UserInfo>Views</UserInfo>
           <StatsNumbers>{views}</StatsNumbers>
-        </StatsList>
-        <StatsList>
+        </StatsItem>
+        <StatsItem>
           <UserInfo>Likes</UserInfo>
           <StatsNumbers>{likes}</StatsNumbers>
-        </StatsList>
-      </Stats>
+        </StatsItem>
+      </StatsList>
     </Box>
   );
 };

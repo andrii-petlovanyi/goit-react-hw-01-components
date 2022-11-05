@@ -2,7 +2,7 @@ export const theme = {
   colors: {
     black: '#000',
     white: '#fff',
-    text: '#2a2a2a',
+    text: '#2e2e2e',
     background: 'RGBA(255,238,140,0.4);',
     primary: '#07c',
     secondary: '#05a',
@@ -11,9 +11,9 @@ export const theme = {
     borderColor: 'RGBA(0,0,0,0.15)',
     backgroundColorCard: 'RGBA(0,0,0,0.06)',
     cardSecondTextColor: 'RGBA(0,0,0,0.37)',
-    friendsCardColor: 'RGBA(255,238,140,0.4)',
-    tableTitleColor: '#1fb9ff',
-    tableRowSecondColor: 'RGBA(0,120,124,0.22)',
+    friendsCardColor: '#e7e7e366',
+    tableTitleColor: '#6a6c6c',
+    tableRowSecondColor: '#66686838',
   },
   space: [0, 2, 4, 8, 16, 25, 32, 64, 128, 256],
   fonts: {
