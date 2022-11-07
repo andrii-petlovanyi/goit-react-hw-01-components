@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { getRandom } from '../../utils/randColor';
 
 export const StatisticTittle = styled.h2`
   padding: ${p => p.theme.padding.l};
@@ -23,20 +24,38 @@ export const StatisticItem = styled.li`
   width: 64px;
   padding: ${p => p.theme.padding.m} 0;
   outline: ${p => p.theme.borders.normal} ${p => p.theme.colors.borderColor};
-  :nth-of-type(1) {
-    background-color: RGBA(0, 188, 255, 0.66);
-  }
+  background-color: RGB(
+    ${getRandom(0, 155)},
+    ${getRandom(0, 155)},
+    ${getRandom(0, 155)}
+  );
   :nth-of-type(2) {
-    background-color: RGBA(236, 7, 174, 1);
+    background-color: RGB(
+      ${getRandom(0, 155)},
+      ${getRandom(0, 155)},
+      ${getRandom(0, 155)}
+    );
   }
   :nth-of-type(3) {
-    background-color: RGBA(136, 7, 174, 1);
+    background-color: RGB(
+      ${getRandom(0, 155)},
+      ${getRandom(0, 155)},
+      ${getRandom(0, 155)}
+    );
   }
   :nth-of-type(4) {
-    background-color: RGBA(0, 205, 255, 1);
+    background-color: RGB(
+      ${getRandom(0, 155)},
+      ${getRandom(0, 155)},
+      ${getRandom(0, 155)}
+    );
   }
   :nth-of-type(5) {
-    background-color: RGBA(0, 101, 104, 1);
+    background-color: RGB(
+      ${getRandom(100, 155)},
+      ${getRandom(100, 155)},
+      ${getRandom(100, 155)}
+    );
   }
 `;
 

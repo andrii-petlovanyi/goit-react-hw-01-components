@@ -9,6 +9,8 @@ import {
   StatisticPercent,
 } from './Statistics.styled';
 
+
+
 export const Statistics = ({ title, stats }) => {
   return (
     <Box
