@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const FriendsItem = styled.li`
+export const FriendItem = styled.li`
   display: flex;
   width: 100%;
   height: 80px;
